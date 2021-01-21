@@ -18,3 +18,12 @@ BiocManager::install(version = "3.12")
 
 # to see documentation
 # browseVignettes("tximport")
+
+###
+# ggplot2
+# but is already installed
+# we can check if a pckage is instaled by the following command:
+	# "ggplot2" %in% installed.packages()
+###
+
+# install.packages(pkgs="ggplot2", lib ="/usr/lib/R/library", dependencies=T)
