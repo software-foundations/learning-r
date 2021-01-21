@@ -14,7 +14,7 @@ install.packages(pkgs="DESeq2", lib ="/usr/lib/R/library", dependencies=T) # Err
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install("tximport")
+BiocManager::install(version = "3.12")
 
 # to see documentation
 # browseVignettes("tximport")
