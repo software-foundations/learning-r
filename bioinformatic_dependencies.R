@@ -1,7 +1,7 @@
-# library(tidyverse)
-# library(tximport)
-# library(EnsDb.Hsapiens.v86)
-# library(DESeq2)
+# library(tidyverse) # ok
+# library(tximport) # ok
+# library(EnsDb.Hsapiens.v86) # ok
+# library(DESeq2) # ok
 
 ###
 # Tydeverse
@@ -17,7 +17,8 @@ install.packages(pkgs="DESeq2", lib ="/usr/lib/R/library", dependencies=T) # Err
 # https://bioconductor.org/packages/devel/bioc/html/tximport.html
 ###
 if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
+    # install.packages("BiocManager")
+    install.packages("BiocManager", dependencies=TRUE)
 
 # BiocManager::install(version = "3.12")
 BiocManager::install("tximport")
