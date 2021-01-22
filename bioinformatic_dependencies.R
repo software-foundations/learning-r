@@ -28,3 +28,12 @@ BiocManager::install("tximport")
 ###
 
 # install.packages(pkgs="ggplot2", lib ="/usr/lib/R/library", dependencies=T)
+
+###
+# EnsDb.Hsapiens.v86
+###
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("EnsDb.Hsapiens.v86")
