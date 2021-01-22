@@ -1,0 +1,3 @@
+# Lists (“generic vectors”) are another kind of data storage. Lists have elements, each of which can contain any type of R object, i.e. the elements of a list do not have to be of the same type. List elements are accessed through three different indexing operations. These are explained in detail in Indexing.
+
+# Lists are vectors, and the basic vector types are referred to as atomic vectors where it is necessary to exclude lists.
