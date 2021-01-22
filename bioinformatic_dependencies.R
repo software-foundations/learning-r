@@ -31,6 +31,10 @@ BiocManager::install("tximport")
 
 ###
 # EnsDb.Hsapiens.v86
+<<<<<<< HEAD
+=======
+# https://bioconductor.org/packages/release/data/annotation/html/EnsDb.Hsapiens.v86.html
+>>>>>>> (bioinformatic_dependencies.R, at /) -> adding EnsDb.Hsapiens.v86 instalation
 ###
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
