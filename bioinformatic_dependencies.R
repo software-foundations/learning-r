@@ -37,4 +37,41 @@ BiocManager::install("tximport")
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install("EnsDb.Hsapiens.v86", dep=T)
+BiocManager::install("EnsDb.Hsapiens.v86", dependencies=TRUE)
+
+###
+# EnsDb.Hsapiens.v86 dependencies
+# Warning messages:
+# ok 1: In install.packages(...) :
+#   installation of package ‘Rsamtools’ had non-zero exit status
+# 2: In install.packages(...) :
+#   installation of package ‘GenomicAlignments’ had non-zero exit status
+# 3: In install.packages(...) :
+#   installation of package ‘rtracklayer’ had non-zero exit status
+# 4: In install.packages(...) :
+#   installation of package ‘GenomicFeatures’ had non-zero exit status
+# 5: In install.packages(...) :
+#   installation of package ‘ensembldb’ had non-zero exit status
+# 6: In install.packages(...) :
+#   installation of package ‘EnsDb.Hsapiens.v86’ had non-zero exit status
+###
+
+###
+# ok Rsamtools
+# https://bioconductor.org/packages/release/bioc/html/Rsamtools.html
+###
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("Rsamtools", dep=T)
+
+###
+# ‘GenomicAlignments’
+# https://bioconductor.org/packages/release/bioc/html/Rsamtools.html
+###
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("Rsamtools", dep=T)
