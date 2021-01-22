@@ -3,6 +3,11 @@
 # library(EnsDb.Hsapiens.v86)
 # library(DESeq2)
 
+###
+# Tydeverse
+###
+install.packages(pkgs="tidyverse", dependencies=TRUE, lib ="/usr/lib/R/library")
+
 # install.packages(pkgs="tximport", lib ="/usr/lib/R/library", dependencies=T) # Erro
 install.packages(pkgs="EnsDb.Hsapiens.v86", lib ="/usr/lib/R/library", dependencies=T) # Erro
 install.packages(pkgs="DESeq2", lib ="/usr/lib/R/library", dependencies=T) # Erro
